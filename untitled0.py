@@ -205,11 +205,13 @@ with siteHeader:
     
     
     
-    df2 = df.append({'OPERASYON SAYISI' : int(OPERASYON_SAYISI), 'KAMLI DELİK' : int(KAMLI_DELIK),
+    df2 = pd.Dataframe({'OPERASYON SAYISI' : int(OPERASYON_SAYISI), 'KAMLI DELİK' : int(KAMLI_DELIK),
                      'ZORLUK KATSAYISI' :int(ZORLUK_KATSAYISI), 'TOPLAM AĞIRLIK' : float(kalip_agirligi),'KALIP TİPİ_0' :int(kalip_postali) ,
-                     'KALIP TİPİ_1' : int(kalip_prograsif), 'KALIP TİPİ_2' : int(kalip_tandem), 'KALIP TİPİ_3' : int(kalip_transfer)}, ignore_indeks = True)
+                     'KALIP TİPİ_1' : int(kalip_prograsif), 'KALIP TİPİ_2' : int(kalip_tandem), 'KALIP TİPİ_3' : int(kalip_transfer)})
+
   
-    
+  
+    df3 = pd.concat([df1, df2], ignore_indeks = True)
     
 
    
@@ -227,7 +229,7 @@ with siteHeader:
     
 
     if submitted:
-        result = ValuePredictor(df2)*float(BIRIM_FIYAT)
+        result = ValuePredictor(df3)*float(BIRIM_FIYAT)
         st.markdown('<p class="navbar"> Öngörülen Kalıp Maliyeti (€) </p>', unsafe_allow_html=True)
         st.write(result[0])
         print(result)
