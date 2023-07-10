@@ -205,7 +205,9 @@ with siteHeader:
     
     
     
-    df2 = df.append({'OPERASYON SAYISI' : int(OPERASYON_SAYISI), 'KAMLI DELİK' : int(KAMLI_DELIK), 'ZORLUK KATSAYISI' :int(ZORLUK_KATSAYISI), 'TOPLAM AĞIRLIK' : float(kalip_agirligi),'KALIP TİPİ_0' :int(kalip_postali) , 'KALIP TİPİ_1' : int(kalip_prograsif), 'KALIP TİPİ_2' : int(kalip_tandem), 'KALIP TİPİ_3' : int(kalip_transfer)}, ignore_index = True)
+    df2 = df.append({'OPERASYON SAYISI' : int(OPERASYON_SAYISI), 'KAMLI DELİK' : int(KAMLI_DELIK),
+                     'ZORLUK KATSAYISI' :int(ZORLUK_KATSAYISI), 'TOPLAM AĞIRLIK' : float(kalip_agirligi),'KALIP TİPİ_0' :int(kalip_postali) ,
+                     'KALIP TİPİ_1' : int(kalip_prograsif), 'KALIP TİPİ_2' : int(kalip_tandem), 'KALIP TİPİ_3' : int(kalip_transfer)}, ignore_index = True)
     
     
 
