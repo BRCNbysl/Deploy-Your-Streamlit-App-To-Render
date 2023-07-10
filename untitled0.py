@@ -211,7 +211,7 @@ with siteHeader:
 
   
   
-    df3 = pd.concat([df1, df2], ignore_indeks = True)
+    df3 = pd.concat([df, df2], ignore_indeks = True)
     
 
    
