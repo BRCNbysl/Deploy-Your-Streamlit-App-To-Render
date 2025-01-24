@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run untitled0.py
+web: sh setup.sh && streamlit run str_diecost.py
