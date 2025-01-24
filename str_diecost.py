@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 28 10:07:43 2022
 
 @author: bbaysal
 """
@@ -23,7 +22,7 @@ multiple = 0
 from PIL import Image
 
 #opening the image
-image = Image.open('coskunoz_metalform.png')
+image = Image.open('form.png') #Added your image
 
 #displaying the image on streamlit app
 st.image(image, use_column_width=True)
@@ -185,23 +184,6 @@ with siteHeader:
         else:
             kalip_postali,kalip_prograsif,kalip_tandem,kalip_transfer = [0,0,0,1]
             
-        
-       # if str(FIRMA_ADI) == "FORD":
-       #     firma_ford , firma_psa , firma_renault , firma_togg = [1,0,0,0]
-       # elif str(FIRMA_ADI) == "PSA":
-       #     firma_ford , firma_psa , firma_renault , firma_togg = [0,1,0,0]
-       # elif str(FIRMA_ADI) == "RENAULT":                                       #reanult yazıldığı için else düşüyor o yüzden fiyatlar tog ile aynı geliyor
-       #     firma_ford , firma_psa , firma_renault , firma_togg = [0,0,1,0]
-       # else:
-       #     firma_ford , firma_psa , firma_renault , firma_togg = [0,0,0,1]
-        
-
-   # print(OPERASYON_SAYISI,KAMLI_DELIK,ZORLUK_KATSAYISI,kalip_agirligi,
-   #      kalip_postali,kalip_prograsif,kalip_tandem,kalip_transfer,
-   #      firma_ford,firma_psa,firma_renault,firma_togg)
-   #print(type(OPERASYON_SAYISI),type(KAMLI_DELIK),type(ZORLUK_KATSAYISI),type(kalip_agirligi),
-   #      type(kalip_postali),type(kalip_prograsif),type(kalip_tandem),type(kalip_transfer),
-   #      type(firma_ford),type(firma_psa),type(firma_renault),type(firma_togg))
     
     
     
